@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #2d3436;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00b894, #00cec9);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #2d3436;
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: #00b894;
+      margin: 10px auto;
+    }
+
+    section {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin: 20px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    p {
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
+
+    strong {
+      color: #00b894;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    li {
+      background: #f1f2f6;
+      padding: 15px 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    li:hover {
+      background: #00b894;
+      color: white;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 15px;
+      margin: 20px auto;
+      display: block;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .content {
+        padding: 20px;
+      }
+
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Personal Website</h1>
+  </header>
+  
+  <div class="content">
+    <h1>Biodata</h1>
+    <section>
+      <p><strong>Name:</strong> Hamza Seefaldin Alnoor</p>
+      <p><strong>Student ID:</strong> AI230262</p>
+      <p><strong>Program:</strong> BIT (Web Development)</p>
+      <p><strong>Email:</strong> hamzasifealdin@gmail.com</p>
+    </section>
+
+    <h1>My Hobbies</h1>
+    <section>
+      <ul>
+        <li>Football</li>
+        <li>Photography</li>
+        <li>Gaming</li>
+        <li>Hiking</li>
+      </ul>
+    </section>
+
+    <h1>Campus Life</h1>
+    <section>
+      <p>I've enjoyed various events like the Hackathon 2024, Industrial Visit to Cyberjaya Tech Hub, and campus festivals. It was amazing sharing ideas and making new friends during those times!</p>
+    </section>
+  </div>
+</body>
+</html>
